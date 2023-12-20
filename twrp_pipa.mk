@@ -19,6 +19,9 @@ DEVICE_PATH := device/xiaomi/pipa
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# twrp
+$(call inherit-product, vendor/twrp/config/common.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := pipa
 
